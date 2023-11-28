@@ -1,0 +1,29 @@
+
+OUTLINE for ROCK PAPER SCISSORS TYPE GAME IN JAVA
+
+
+print rules to screen
+
+//game logic contained in while loop
+while user wants to play a round {
+
+    while user input is invalid {
+        get user move from input out of five options
+        check if user input is valid
+    }
+
+    generate random move for computer
+
+    determine if user wins loses or ties
+
+    print both computer and user moves and declare winner
+
+    increment games played
+    record user or computer victory
+
+    ask if user wants to play again
+
+    
+}
+
+when user no longer wants to play print rounds played, times user won, and times computer won. 
