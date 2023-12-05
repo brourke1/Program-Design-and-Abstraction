@@ -1,6 +1,11 @@
 public class FillInTheBlankQuestion extends Question{
-    private String correctAnswer;
-    public FillInTheBlankQuestion(){
 
+    public String answerKey(){
+        return "__" + this.getCorrectAnswer() + "__ " + this.getQuestion() + " (" + this.getPoints() + " pts)" + "\n".repeat(this.getSpace());
+    }
+
+    public String toString(){
+
+        return "_________" + this.getQuestion() + " (" + this.getPoints() + " pts) " + "\n".repeat(this.getSpace());
     }
 }

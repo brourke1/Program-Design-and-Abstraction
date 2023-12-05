@@ -7,6 +7,8 @@ public class Question{
     private int points;
     private int difficulty;
     private String questionText;
+    private String correctAnswer;
+    private String[] possibleAnswers;
 
     public Question(){
         MAX_DIFFICULTY = 10;
@@ -14,15 +16,45 @@ public class Question{
         answerSpace = 5;
         points = 15;
         difficulty = MAX_DIFFICULTY - MIN_DIFFICULTY;
-        questionText = "How many?";
+        questionText = "Who was the 16th US President";
     }
 
-    public String toString(){
-        String space = "";
-        for(int i = 0; i < answerSpace; i++){
-            space += "\n";
-        }
-        return questionText + " " + Integer.toString(points)
-        + "pts " + space;
+    public void setQuestion(String question){
+        questionText = question;
     }
+
+    public void setPoints(int points){
+        this.points = points;
+    }
+    
+    public void setCorrectAnswer(String ca){
+        correctAnswer = ca;
+    }
+
+    public void setPossibleAnswers(String[] s){
+        possibleAnswers = s;
+    }
+
+    public String[] getPossibleAnswers(){
+        return possibleAnswers;
+    }
+
+    public String getCorrectAnswer(){
+        return this.correctAnswer;
+    }
+
+    public int getSpace(){
+        return answerSpace;
+    }
+
+    public int getPoints(){
+        return this.points;
+    }
+
+    public String getQuestion(){
+
+        return this.questionText;
+    }
+
+
 }
